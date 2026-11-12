@@ -1,0 +1,8 @@
+{
+  "name": "Remix Ecosphere BI \u0026 Smart Bin IA",
+  "description": "Plataforma integral de gestión comercial, hardware inteligente Smart Bin IA con clasificación neural edge, servicios de mantenimiento preventivo y logística accesible.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

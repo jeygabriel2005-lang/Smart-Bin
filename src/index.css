@@ -1,0 +1,155 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0f5238;
+  --color-primary-container: #2d6a4f;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #a8e7c5;
+  --color-primary-fixed: #b1f0ce;
+  --color-primary-fixed-dim: #95d4b3;
+  --color-on-primary-fixed: #002114;
+  --color-on-primary-fixed-variant: #0e5138;
+  --color-inverse-primary: #95d4b3;
+
+  --color-secondary: #386380;
+  --color-secondary-container: #b2dcfe;
+  --color-on-secondary: #ffffff;
+  --color-on-secondary-container: #37627f;
+  --color-secondary-fixed: #c9e6ff;
+  --color-secondary-fixed-dim: #a1cced;
+  --color-on-secondary-fixed: #001e2f;
+  --color-on-secondary-fixed-variant: #1d4b67;
+
+  --color-tertiary: #5a4400;
+  --color-tertiary-container: #775b06;
+  --color-on-tertiary: #ffffff;
+  --color-on-tertiary-container: #fcd579;
+  --color-tertiary-fixed: #ffdf96;
+  --color-tertiary-fixed-dim: #e7c268;
+  --color-on-tertiary-fixed: #251a00;
+  --color-on-tertiary-fixed-variant: #5a4400;
+
+  --color-surface: #f7f9ff;
+  --color-surface-bright: #f7f9ff;
+  --color-surface-dim: #d7dadf;
+  --color-surface-variant: #e0e3e8;
+  --color-surface-container: #ebeef3;
+  --color-surface-container-low: #f1f4f9;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-high: #e5e8ee;
+  --color-surface-container-highest: #e0e3e8;
+
+  --color-on-surface: #181c20;
+  --color-on-surface-variant: #404943;
+  --color-inverse-surface: #2d3135;
+  --color-inverse-on-surface: #eef1f6;
+
+  --color-outline: #707973;
+  --color-outline-variant: #bfc9c1;
+
+  --color-error: #ba1a1a;
+  --color-error-container: #ffdad6;
+  --color-on-error: #ffffff;
+  --color-on-error-container: #93000a;
+
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-display: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-surface);
+  color: var(--color-on-surface);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Material Symbols font style helper */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+/* High Contrast Mode (WCAG AAA) */
+body.high-contrast {
+  --color-surface: #0a0e12;
+  --color-surface-bright: #121820;
+  --color-surface-dim: #05070a;
+  --color-surface-container: #151d26;
+  --color-surface-container-low: #10161d;
+  --color-surface-container-lowest: #000000;
+  --color-surface-container-high: #1c2633;
+  --color-surface-container-highest: #243142;
+  --color-on-surface: #ffffff;
+  --color-on-surface-variant: #e1e7ed;
+  --color-outline: #ffffff;
+  --color-outline-variant: #8ea1b3;
+  --color-primary: #00e68a;
+  --color-primary-container: #00663d;
+  --color-on-primary: #000000;
+  --color-on-primary-container: #ffffff;
+  --color-secondary: #63c2ff;
+  --color-secondary-container: #0d466e;
+  --color-on-secondary: #000000;
+  --color-on-secondary-container: #ffffff;
+  border-color: #ffffff !important;
+}
+
+body.high-contrast * {
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+body.high-contrast button,
+body.high-contrast a,
+body.high-contrast input,
+body.high-contrast select,
+body.high-contrast textarea {
+  outline-color: #00e68a;
+}
+
+/* Font Sizing scale accessibility levels */
+body.text-scale-large {
+  font-size: 115%;
+}
+
+body.text-scale-xlarge {
+  font-size: 130%;
+}
+
+/* Reduced motion mode */
+body.reduced-motion * {
+  animation-duration: 0.001ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.001ms !important;
+}
+
+/* Keyboard focus accessibility */
+:focus-visible {
+  outline: 3px solid #386380 !important;
+  outline-offset: 2px !important;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(112, 121, 115, 0.3);
+  border-radius: 9999px;
+}
